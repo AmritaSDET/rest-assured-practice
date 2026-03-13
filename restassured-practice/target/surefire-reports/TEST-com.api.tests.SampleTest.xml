@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.api.tests.SampleTest" time="6.018" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/workspaces/rest-assured-practice/restassured-practice/target/test-classes:/workspaces/rest-assured-practice/restassured-practice/target/classes:/home/codespace/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/home/codespace/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/home/codespace/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/home/codespace/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/codespace/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/codespace/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/codespace/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/codespace/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/codespace/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/codespace/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/home/codespace/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/home/codespace/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/home/codespace/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/home/codespace/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/home/codespace/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/home/codespace/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/codespace/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/codespace/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/home/codespace/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:"/>
+    <property name="java.vm.vendor" value="Microsoft"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://www.microsoft.com"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="session.topDirectory" value="/workspaces/rest-assured-practice/restassured-practice"/>
+    <property name="sun.boot.library.path" value="/usr/local/sdkman/candidates/java/25.0.1-ms/lib"/>
+    <property name="sun.java.command" value="/workspaces/rest-assured-practice/restassured-practice/target/surefire/surefirebooter-20260311050855904_3.jar /workspaces/rest-assured-practice/restassured-practice/target/surefire 2026-03-11T05-08-55_708-jvmRun1 surefire-20260311050855904_1tmp surefire_0-20260311050855904_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/workspaces/rest-assured-practice/restassured-practice/target/test-classes:/workspaces/rest-assured-practice/restassured-practice/target/classes:/home/codespace/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/home/codespace/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/home/codespace/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/home/codespace/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/codespace/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/codespace/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/codespace/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/codespace/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/codespace/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/codespace/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/home/codespace/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/home/codespace/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/home/codespace/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/home/codespace/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/home/codespace/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/home/codespace/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/codespace/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/codespace/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/home/codespace/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/codespace"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="/usr/local/sdkman/candidates/java/25.0.1-ms"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/workspaces/rest-assured-practice/restassured-practice"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/workspaces/rest-assured-practice/restassured-practice/target/surefire/surefirebooter-20260311050855904_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.1+8-LTS"/>
+    <property name="user.name" value="codespace"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.8.0-1044-azure"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Microsoft-12574222"/>
+    <property name="localRepository" value="/home/codespace/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="25.0.1"/>
+    <property name="user.dir" value="/workspaces/rest-assured-practice/restassured-practice"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Microsoft"/>
+    <property name="java.vm.version" value="25.0.1+8-LTS"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="createUser" classname="com.api.tests.SampleTest" time="3.84">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://dummyjson.com/products/add
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Dyson straightener",
+    "SKU": "234567-03-IN"
+}
+HTTP/1.1 201 Created
+Date: Wed, 11 Mar 2026 05:08:59 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 39
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"27-51wB/xEyNwN+fwuSax8y3+lb34M"
+strict-transport-security: max-age=15552000; includeSubDomains
+vary: Accept-Encoding
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 99
+x-ratelimit-reset: 1773205745
+x-xss-protection: 1; mode=block
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2BALF8hGGDqTI670iz6ce0OjoeGMo7q8uARfv48P00C6iH9OJv4gQaYLLA90a%2FtmqbRvJ3ZCPRRGYFH50c%2FQfmyRSYSsHRW3DcNNjVb4%3D"}]}
+Server: cloudflare
+CF-RAY: 9da80b5c4ff185fd-BOM
+
+{
+    "id": 195,
+    "title": "Dyson straightener"
+}
+Created Product ID = 195
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="deleteUser" classname="com.api.tests.SampleTest" time="0.376">
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://dummyjson.com/products/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 11 Mar 2026 05:09:00 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=42OsftER2RSW7HpqFNpPB%2FeW3yQBgZCm6%2B4KdJphy5%2FnmlZz119azDTT%2F3yAFEHOttYM9JBJ9DazHb7n0Nob55LBtPLrwX4CvN6bNSw%3D"}]}
+etag: W/"61e-g4BrpUjfogEvdLp0AWKa5QU/Ejs"
+strict-transport-security: max-age=15552000; includeSubDomains
+vary: Accept-Encoding
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 98
+x-ratelimit-reset: 1773205745
+x-xss-protection: 1; mode=block
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9da80b665ab93b1b-BOM
+
+{
+    "id": 1,
+    "title": "Essence Mascara Lash Princess",
+    "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
+    "category": "beauty",
+    "price": 9.99,
+    "discountPercentage": 10.48,
+    "rating": 2.56,
+    "stock": 99,
+    "tags": [
+        "beauty",
+        "mascara"
+    ],
+    "brand": "Essence",
+    "sku": "BEA-ESS-ESS-001",
+    "weight": 4,
+    "dimensions": {
+        "width": 15.14,
+        "height": 13.08,
+        "depth": 22.99
+    },
+    "warrantyInformation": "1 week warranty",
+    "shippingInformation": "Ships in 3-5 business days",
+    "availabilityStatus": "In Stock",
+    "reviews": [
+        {
+            "rating": 3,
+            "comment": "Would not recommend!",
+            "date": "2025-04-30T09:41:02.053Z",
+            "reviewerName": "Eleanor Collins",
+            "reviewerEmail": "eleanor.collins@x.dummyjson.com"
+        },
+        {
+            "rating": 4,
+            "comment": "Very satisfied!",
+            "date": "2025-04-30T09:41:02.053Z",
+            "reviewerName": "Lucas Gordon",
+            "reviewerEmail": "lucas.gordon@x.dummyjson.com"
+        },
+        {
+            "rating": 5,
+            "comment": "Highly impressed!",
+            "date": "2025-04-30T09:41:02.053Z",
+            "reviewerName": "Eleanor Collins",
+            "reviewerEmail": "eleanor.collins@x.dummyjson.com"
+        }
+    ],
+    "returnPolicy": "No return policy",
+    "minimumOrderQuantity": 48,
+    "meta": {
+        "createdAt": "2025-04-30T09:41:02.053Z",
+        "updatedAt": "2025-04-30T09:41:02.053Z",
+        "barcode": "5784719087687",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+    },
+    "images": [
+        "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp"
+    ],
+    "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+    "isDeleted": true,
+    "deletedOn": "2026-03-11T05:09:00.633Z"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="readUser" classname="com.api.tests.SampleTest" time="0.092">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://dummyjson.com/products/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 11 Mar 2026 05:09:00 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: cloudflare
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 99
+x-ratelimit-reset: 1769115192
+x-dns-prefetch-control: off
+x-frame-options: SAMEORIGIN
+strict-transport-security: max-age=15552000; includeSubDomains
+x-download-options: noopen
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+access-control-allow-origin: *
+etag: W/"5e6-bX+IgjHKZz+TflDmEXfyyaBO9Hk"
+vary: Accept-Encoding
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=WUct7jRQzf85ift7iZhqHj6kxdji0ePPTSloZO2JJOYvIqlYitEXx%2F1d9ih8SE3w4XY3hoNc95tLP5xr26AOzF%2FhSYZwQRuvtite"}]}
+Age: 92188
+Cache-Control: no-store
+cf-cache-status: HIT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Content-Encoding: gzip
+CF-RAY: 9da80b688fe00f06-BOM
+
+{
+    "id": 1,
+    "title": "Essence Mascara Lash Princess",
+    "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
+    "category": "beauty",
+    "price": 9.99,
+    "discountPercentage": 10.48,
+    "rating": 2.56,
+    "stock": 99,
+    "tags": [
+        "beauty",
+        "mascara"
+    ],
+    "brand": "Essence",
+    "sku": "BEA-ESS-ESS-001",
+    "weight": 4,
+    "dimensions": {
+        "width": 15.14,
+        "height": 13.08,
+        "depth": 22.99
+    },
+    "warrantyInformation": "1 week warranty",
+    "shippingInformation": "Ships in 3-5 business days",
+    "availabilityStatus": "In Stock",
+    "reviews": [
+        {
+            "rating": 3,
+            "comment": "Would not recommend!",
+            "date": "2025-04-30T09:41:02.053Z",
+            "reviewerName": "Eleanor Collins",
+            "reviewerEmail": "eleanor.collins@x.dummyjson.com"
+        },
+        {
+            "rating": 4,
+            "comment": "Very satisfied!",
+            "date": "2025-04-30T09:41:02.053Z",
+            "reviewerName": "Lucas Gordon",
+            "reviewerEmail": "lucas.gordon@x.dummyjson.com"
+        },
+        {
+            "rating": 5,
+            "comment": "Highly impressed!",
+            "date": "2025-04-30T09:41:02.053Z",
+            "reviewerName": "Eleanor Collins",
+            "reviewerEmail": "eleanor.collins@x.dummyjson.com"
+        }
+    ],
+    "returnPolicy": "No return policy",
+    "minimumOrderQuantity": 48,
+    "meta": {
+        "createdAt": "2025-04-30T09:41:02.053Z",
+        "updatedAt": "2025-04-30T09:41:02.053Z",
+        "barcode": "5784719087687",
+        "qrCode": "https://cdn.dummyjson.com/public/qr-code.png"
+    },
+    "images": [
+        "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp"
+    ],
+    "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="updateUser" classname="com.api.tests.SampleTest" time="1.146">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	https://dummyjson.com/products/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "title": "Dyson",
+    "price": 299.99,
+    "stock": 100
+}
+HTTP/1.1 200 OK
+Date: Wed, 11 Mar 2026 05:09:02 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+access-control-allow-origin: *
+etag: W/"211-3a4l23JndwTd97oNCJgMx2/tFqo"
+strict-transport-security: max-age=15552000; includeSubDomains
+vary: Accept-Encoding
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 99
+x-ratelimit-reset: 1773205745
+x-xss-protection: 1; mode=block
+cf-cache-status: DYNAMIC
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=oRv2dGfj9Cj1nXTsr1WBmyl%2FMtirExzL%2B9xapsH3Smsr7utAF0oajgUDmJWq2%2F0cf3ypL43uKbzKd14BGM7NbKY%2BI1KhsG6ghAIkwdE%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: 9da80b692c355539-BOM
+
+{
+    "id": 1,
+    "title": "Dyson",
+    "price": 299.99,
+    "discountPercentage": 10.48,
+    "stock": 100,
+    "rating": 2.56,
+    "images": [
+        "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp"
+    ],
+    "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+    "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
+    "brand": "Essence",
+    "category": "beauty"
+}
+]]></system-out>
+  </testcase>
+</testsuite>
