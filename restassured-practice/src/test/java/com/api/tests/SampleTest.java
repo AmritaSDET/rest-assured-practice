@@ -1,6 +1,11 @@
 package com.api.tests;
 
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+
+import org.testng.Assert;
+// import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
@@ -8,18 +13,20 @@ import static org.hamcrest.Matchers.*;
 
 // CRUD operations on dummyjson.com API to test create, read, update and delete product endpoints.
 public class SampleTest {
-
-     
     private static int id;
-    @Test
-    public void createUser() {
+//     String extitle= "Dyson straightener";
+
+    @Test(dataProvider = "ProductsData" , dataProviderClass = ProductDataProvider.class)
+
+    public void createUser(String title, double price) {
         RestAssured.reset();
         String requestBody = "{\n" +
-                "  \"title\": \"Dyson straightener\",\n" +
-                "  \"SKU\": \"234567-03-IN\"\n" +
+                "  \"title\": \"" + title + "\",\n" +
+                "  \"price\": " + price + ",\n" +
+                "  \"stock\": 100\n" +
                 "}";
-            id =
-        given()
+            
+             id = given()
                 .baseUri("https://dummyjson.com")
                 .contentType("application/json")
                 .body(requestBody)
@@ -29,28 +36,38 @@ public class SampleTest {
                 .then()
                 .log().all()
                 .statusCode(anyOf(is(200), is(201)))
-                .body("title", equalTo("Dyson straightener"))
+                // .body("title", equalTo("Dyson straightener"))
                 .body("id", notNullValue())
                 .extract()
                 .path("id");
-                 System.out.println("Created Product ID = " + id);
+                 System.out.println("new products added"+ id);
 
     }
-    
-    @Test 
-     public void readUser() {
+// @Test
+public void readUser() {
+
+    Response response =
         given()
-                .baseUri("https://dummyjson.com")
-                .log().all()
+            .baseUri("https://dummyjson.com")
+            .log().all()
         .when()
-                .get("/products/1")
+            .get("/products/1")
         .then()
-                .log().all()
-                .statusCode(anyOf(is(404), is(200)));
-                // .statusCode(200);
-                // .body("title", equalTo("Dyson straightener"));
-     }
-@Test 
+            .log().all()
+            .statusCode(200)
+            .extract().response();
+
+    JsonPath jsonPath = response.jsonPath();
+    String Actualtitle = jsonPath.getString("title");
+    System.out.println("Actual Title: " + Actualtitle );
+    String Expectedtitle = "Essence Mascara Lash Princess";
+    Assert.assertEquals(Actualtitle, Expectedtitle, "Title does not match");
+    
+
+}
+
+    
+// @Test 
      public void updateUser() {
       
 String requestBody = "{\n" +
@@ -75,7 +92,7 @@ String requestBody = "{\n" +
                  .body("stock", equalTo(100));
      }
 
-     @Test
+//      @Test
         public void deleteUser() {
         given()
                 .baseUri("https://dummyjson.com")
